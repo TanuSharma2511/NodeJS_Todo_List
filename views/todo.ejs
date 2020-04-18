@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    body{
+        background:#ddd;
+    }
+    .navbar-brand,.navbar-right{
+        font-family:cursive;
+        font-weight: 500;
+        font-size:24px;
+    }
+    .navbar-right{
+        font-size:20px;
+    }
+    .container{
+        width:500px;
+        height:250px;
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding:20px;
+        background: #333;
+        color:#ddd;
+        font-family:cursive;
+    }
+    .text{
+        margin-top:15px;
+        line-height: 35px;
+        font-size:18px;
+    }
+    .btn{
+        margin-top:15px;
+        font-weight: 500;
+        font-family: cursive;
+        background: #ddd;
+        color:#333;
+    }
+    .btn:hover{
+        background: #fff;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Todo-List Application</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/show_todo">Show Todo List</a></li>
+            <li><a href="/add_todo">Add Todo Item</a></li>
+           
+          </ul>
+        </div>
+      </nav>
+      <div class="container container-inverse">
+          <div class="text text-center">
+              Todo List help you reminding your task or work that one wants to get done or that need to get done. It acts as a memory aid - that one needs or intends to accomplish.
+              <a href='/add_todo' class="btn btn-block">Add todo</a>
+          </div>
+      </div>
+</body>
+</html>
